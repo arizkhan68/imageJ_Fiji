@@ -1,0 +1,58 @@
+macro "Type 0 [0]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Yellow size=Large label show counter=0");
+}
+
+macro "Type 1 [1]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=White size=Large label show counter=1");
+}
+
+macro "Type 2 [2]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Orange size=Large label show counter=2");
+}
+
+macro "Type 3 [3]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Pink size=Large label show counter=3");
+}
+
+macro "Type 4 [4]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Green size=Large label show counter=4");
+}
+
+macro "Type 5 [5]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Pink size=Large label show counter=5");
+}
+
+macro "Type 6 [6]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Cyan size=Large label show counter=6");
+}
+
+macro "Type 7 [7]" {
+  setTool("multipoint");
+  run("Point Tool...", "type=Dot color=Red size=Large label show counter=7");
+}
+
+macro "Channel 1 [f1]" {
+	Stack.setActiveChannels("1000");
+	Stack.setChannel(1);
+}
+macro "Channel 2 [f2]" {
+	Stack.setActiveChannels("0100");
+	Stack.setChannel(2);
+}
+macro "Channel 3 [f3]" {
+	Stack.setActiveChannels("0010");
+	Stack.setChannel(3);
+}
+macro "Channel 4 [f4]" {
+	Stack.setActiveChannels("0001");
+	Stack.setChannel(4);
+}
+macro "Channel All [f5]" {Stack.setActiveChannels("1111");}
+macro "DAPI [D]" {run("DAPI");}
